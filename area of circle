@@ -1,0 +1,5 @@
+#code to find area of circle
+
+x= float(input("input the radius of circle:"))
+a=3.141592*x*x
+print("the area of circle of radius"+ str(x)+ "is"+ str(a))
