@@ -1,0 +1,5 @@
+#to get a file name and find extension
+
+filename = input("input the file name:")
+fext = filename.split(".")
+print("the extension of file is :" + fext[1])
