@@ -3,6 +3,8 @@ i,j=0,1
 a= int(input("enter the number below which the series should be printed"))
 k=i+j
 print("the fibonacci series below",a,"is")
+print(i)
+print(j)
 while k<a:
       k=i+j
       if (k<a):
