@@ -1,0 +1,12 @@
+# to print fibonacci series below a number
+i,j=0,1
+a= int(input("enter the number below which the series should be printed"))
+k=i+j
+print("the fibonacci series below",a,"is")
+while k<a:
+      k=i+j
+      if (k<a):
+         print(k)
+      i=j
+      j=k
+      
