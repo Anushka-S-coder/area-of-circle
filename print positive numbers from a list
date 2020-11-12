@@ -1,0 +1,13 @@
+# finding positive values in a string
+l=[]
+a=int(input("enter number in the list: "))
+b=int(input("enter number in the list: "))
+c=int(input("enter number in the list: "))
+d=int(input("enter number in the list: "))
+l.append(a)
+l.append(b)
+l.append(c)
+l.append(d)
+for x in l:
+    if(x>0):
+        print(x)
