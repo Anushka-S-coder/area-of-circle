@@ -1,0 +1,32 @@
+def most_frequent(x):
+    dict={}
+    dict[x[0]]=1
+    n=1
+    print(dict)
+    while n<len(x) :
+        
+        for key in dict:
+            o=2
+            if key==x[n]:
+                o=1
+                break
+               
+            else:
+                o=0
+                continue
+         
+        if o==1:
+            y=dict[x[n]]
+            dict[x[n]]=y+1
+            print(dict)
+            break
+        elif o==0:
+            dict.update({x[n]:1})
+            print(dict)
+        n=n+1
+    print(dict)
+    
+
+
+x=input("enter the string: ")
+most_frequent(x)
