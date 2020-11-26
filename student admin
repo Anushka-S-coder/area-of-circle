@@ -1,0 +1,28 @@
+#student administration
+y='str'
+def input(y):
+    x=(input("enter the information of student(in format name,class,contact no: "))
+    si=x.split(" ")
+    print("entered information:\nname:{}\nclass:{}\ncontact no:{}".format(si[0],si[1],si[2]))
+    return si
+def write(si):
+    with open('studentinfo.csv','a',newline) as csv_file:
+      
+         if csv_file.tell()==0:
+             writer.writerow(["name","class","contactno"])
+         writer=csv.writer(csv_file)
+    write.writerow(si)
+        
+condition='yes'
+stuno=0
+while condition=='yes':
+    si=input(y)
+    c='no'
+    while c=='no':
+        c=input("is the info correct?(yes/no)")
+    if c=='no':
+        input()
+    if c=='yes':
+        write(si)
+        stuno=stuno+1
+        
